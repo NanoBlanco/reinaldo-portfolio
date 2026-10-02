@@ -1,8 +1,12 @@
+import Hero from './sections/Hero'
+import Projects from './sections/Projects'
+
 function App() {
   return (
-    <main>
-      <h1>React Standard</h1>
-    </main>
+    <>
+      <Hero />
+      <Projects />
+    </>
   )
 }
 
