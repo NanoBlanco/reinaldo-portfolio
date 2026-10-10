@@ -49,8 +49,8 @@ function Projects() {
       <header className="projects__header">
         <h2>Proyectos seleccionados</h2>
         <p>
-          Soluciones empresariales desarrolladas y modernizadas en contextos de
-          integración, datos y sistemas críticos.
+          Soluciones empresariales desarrolladas y modernizadas en contextos de integración, datos y
+          sistemas críticos.
         </p>
       </header>
 
@@ -61,9 +61,7 @@ function Projects() {
 
             <h3>{project.title}</h3>
 
-            <p className="project-card__description">
-              {project.description}
-            </p>
+            <p className="project-card__description">{project.description}</p>
 
             <h4>Responsabilidad técnica</h4>
             <p>{project.responsibility}</p>
