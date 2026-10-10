@@ -45,9 +45,9 @@ const projects: Project[] = [
 
 function Projects() {
   return (
-    <section id="projects" className="projects">
+    <section id="projects" className="projects" aria-labelledby="projects-title">
       <header className="projects__header">
-        <h2>Proyectos seleccionados</h2>
+        <h2 id="projects-title">Proyectos seleccionados</h2>
         <p>
           Soluciones empresariales desarrolladas y modernizadas en contextos de integración, datos y
           sistemas críticos.

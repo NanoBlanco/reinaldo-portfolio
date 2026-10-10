@@ -1,8 +1,8 @@
 function Contact() {
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact" aria-labelledby="contact-title">
       <div className="contact__content">
-        <h2>Hablemos de tu próximo proyecto</h2>
+        <h2 id="contact-title">Hablemos de tu próximo proyecto</h2>
 
         <p className="contact__description">
           Estoy abierto a conversar sobre desarrollo de software, integración de sistemas,

@@ -1,11 +1,11 @@
 function Hero() {
   return (
     <section className="hero">
-      <h1 className="hero__role">Software Developer</h1>
+      <p className="hero__role">Software Developer</p>
 
       <p className="hero__specialties">Backend · Integration · Architecture</p>
 
-      <p className="hero__name">Reinaldo J. Blanco M.</p>
+      <h1 className="hero__name">Reinaldo J. Blanco M.</h1>
 
       <p className="hero__description">
         Diseñador y desarrollador de soluciones empresariales orientadas a integración, datos y
