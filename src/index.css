@@ -173,3 +173,65 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+.contact {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.contact__content {
+  max-width: 700px;
+}
+
+.contact__content h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+.contact__description {
+  margin: 1.5rem 0 0;
+  color: #6b7280;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact__links a {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.contact__links a:hover {
+  color: #6b7280;
+}
+
+.contact__links a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.contact__email {
+  margin: 2rem 0 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .contact {
+    padding: 5rem 1.25rem;
+  }
+
+  .contact__links {
+    gap: 1rem;
+  }
+}
