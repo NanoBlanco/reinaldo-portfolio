@@ -12,11 +12,11 @@ const projects: Project[] = [
     title: 'Modernización e integración de sistemas académicos con Banner',
     category: 'Architecture · Integration · Legacy Modernization',
     description:
-      'Modernización de la integración entre un sistema institucional de gestión estudiantil desarrollado en Java y Ellucian Banner, utilizando Oracle y PL/SQL como componentes centrales de procesamiento e integración.',
+      'Modernización de la arquitectura de integración entre un sistema institucional de gestión estudiantil y Ellucian Banner, utilizando Oracle 19c y PL/SQL para coordinar el procesamiento e intercambio de información académica.',
     responsibility:
-      'Rediseño de la arquitectura y refactorización progresiva de aproximadamente 20 triggers y procedimientos PL/SQL, incorporando mejoras en consultas y lógica de procesamiento sobre Oracle 19c.',
+      'Rediseño de la arquitectura de ejecución mediante un punto central de orquestación y separación de responsabilidades entre procedimientos, aplicando principios SOLID. Refactorización de aproximadamente 20 triggers y procedimientos PL/SQL, incorporación de validaciones y excepciones personalizadas, optimización de consultas y uso de funcionalidades nativas de Oracle 19c. Documentación técnica de los cambios, sus objetivos y fundamentos.',
     impact:
-      'Mejora de la mantenibilidad y reducción del consumo de recursos de los procesos, preservando la operación de una integración académica crítica.',
+      'Reducción aproximada del 90 % en los fallos registrados en los procesos de integración, según las métricas operacionales. Mejora observada en la mantenibilidad y el consumo de recursos, junto con una gestión de errores más estructurada, facilitando la evolución de una integración académica crítica.',
     technologies: ['Oracle 19c', 'PL/SQL', 'Java', 'SQL', 'Ellucian Banner'],
   },
   {
