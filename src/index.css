@@ -41,12 +41,28 @@ select {
 a {
   color: inherit;
   text-decoration: none;
+  text-underline-offset: 0.25rem;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
   border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a {
+    transition: none;
+  }
 }
 
 .hero {
@@ -128,6 +144,18 @@ a:focus-visible {
   padding: 1.75rem;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover {
+    transform: translateY(-4px);
+    border-color: #d1d5db;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 6%);
+  }
 }
 
 .project-card__category {
@@ -179,6 +207,44 @@ a:focus-visible {
 
   .projects__grid {
     grid-template-columns: 1fr;
+  }
+}
+/*
+@media (prefers-reduced-motion: reduce) {
+  .project-card {
+    transition: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+*/
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover {
+    transform: translateY(-4px);
+    border-color: #d1d5db;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 6%);
+  }
+}
+
+@media (hover: none) {
+  .project-card:active {
+    transform: scale(0.99);
+    border-color: #d1d5db;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card {
+    transition: none;
+  }
+
+  .project-card:hover,
+  .project-card:active {
+    transform: none;
+    box-shadow: none;
   }
 }
 
