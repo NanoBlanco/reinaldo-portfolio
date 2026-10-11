@@ -209,18 +209,7 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
 }
-/*
-@media (prefers-reduced-motion: reduce) {
-  .project-card {
-    transition: none;
-  }
 
-  .project-card:hover {
-    transform: none;
-    box-shadow: none;
-  }
-}
-*/
 @media (hover: hover) and (pointer: fine) {
   .project-card:hover {
     transform: translateY(-4px);
