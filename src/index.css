@@ -5,14 +5,49 @@
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
+    Roboto,
+    Helvetica,
     sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #1f2937;
-  background-color: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
+  color-scheme: dark;
+
+  /* Backgrounds */
+  --color-bg: #071426;
+  --color-bg-secondary: #0b1e35;
+  --color-surface: #10243d;
+  --color-surface-hover: #162e4b;
+
+  /* Borders */
+  --color-border: #263d56;
+  --color-border-accent: rgb(66 217 232 / 35%);
+
+  /* Typography */
+  --color-text: #f1f5f9;
+  --color-text-secondary: #a7b8cc;
+  --color-text-muted: #8295ab;
+
+  /* Accent */
+  --color-accent: #42d9e8;
+  --color-accent-hover: #7ae8f0;
+  --color-accent-contrast: #071426;
+
+  /* Effects */
+  --shadow-card: 0 12px 32px rgb(0 0 0 / 18%);
+  --shadow-card-hover: 0 18px 40px rgb(0 0 0 / 28%);
+  --shadow-accent: 0 0 24px rgb(66 217 232 / 8%);
+
+  /* Layout */
+  --content-width: 1120px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --transition-fast: 180ms ease;
 }
 
 *,
@@ -20,15 +55,28 @@
 *::after {
   box-sizing: border-box;
 }
+/* ---------------------------------------------------------
+   Base
+   --------------------------------------------------------- */
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  background: var(--color-bg);
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+::selection {
+  color: var(--color-accent-contrast);
+  background: var(--color-accent);
 }
 
 button,
@@ -354,76 +402,6 @@ a:focus-visible {
     flex-direction: column;
     align-items: flex-start;
   }
-}
-
-/* =========================================================
-   Visual identity: Deep Navy + Cyan
-   ========================================================= */
-
-:root {
-  color-scheme: dark;
-
-  /* Backgrounds */
-  --color-bg: #071426;
-  --color-bg-secondary: #0b1e35;
-  --color-surface: #10243d;
-  --color-surface-hover: #162e4b;
-
-  /* Borders */
-  --color-border: #263d56;
-  --color-border-accent: rgb(66 217 232 / 35%);
-
-  /* Typography */
-  --color-text: #f1f5f9;
-  --color-text-secondary: #a7b8cc;
-  --color-text-muted: #8295ab;
-
-  /* Accent */
-  --color-accent: #42d9e8;
-  --color-accent-hover: #7ae8f0;
-  --color-accent-contrast: #071426;
-
-  /* Effects */
-  --shadow-card: 0 12px 32px rgb(0 0 0 / 18%);
-  --shadow-card-hover: 0 18px 40px rgb(0 0 0 / 28%);
-  --shadow-accent: 0 0 24px rgb(66 217 232 / 8%);
-
-  /* Layout */
-  --content-width: 1120px;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-
-  --transition-fast: 180ms ease;
-}
-
-/* ---------------------------------------------------------
-   Base
-   --------------------------------------------------------- */
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
-  background: var(--color-bg);
-}
-
-body {
-  margin: 0;
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-#root {
-  min-height: 100vh;
-}
-
-::selection {
-  color: var(--color-accent-contrast);
-  background: var(--color-accent);
 }
 
 /* ---------------------------------------------------------
