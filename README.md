@@ -150,3 +150,7 @@ reinaldo-portfolio/
 ---
 
 Este portafolio se encuentra en desarrollo y evoluciona junto con mis proyectos y mi aprendizaje continuo en desarrollo frontend, arquitectura de software y prácticas modernas de ingeniería.
+
+## Development workflow
+
+Changes are developed in feature branches and integrated into `main` through pull requests validated by GitHub Actions.
