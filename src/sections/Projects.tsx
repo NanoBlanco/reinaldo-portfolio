@@ -9,15 +9,26 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Modernización e integración de sistemas académicos con Banner',
-    category: 'Architecture · Integration · Legacy Modernization',
+    title: 'Modernización de la integración académica con Banner',
+    category: 'Integration · Legacy Modernization · Oracle',
     description:
-      'Modernización de la arquitectura de integración entre un sistema institucional de gestión estudiantil y Ellucian Banner, utilizando Oracle 19c y PL/SQL para coordinar el procesamiento e intercambio de información académica.',
+      'Modernización de la integración académica entre SIGA y Ellucian Banner, orientada a mejorar la confiabilidad del procesamiento y el intercambio de información institucional.',
     responsibility:
-      'Rediseño de la arquitectura de ejecución mediante un punto central de orquestación y separación de responsabilidades entre procedimientos, aplicando principios SOLID. Refactorización de aproximadamente 20 triggers y procedimientos PL/SQL, incorporación de validaciones y excepciones personalizadas, optimización de consultas y uso de funcionalidades nativas de Oracle 19c. Documentación técnica de los cambios, sus objetivos y fundamentos.',
+      'Refactorización del paquete principal de integración académica y del proceso que ejecuta la API de Ethos de Ellucian Banner. Actualización del código existente e intervención de tres triggers del lado de SIGA para mejorar la estructura y el control del proceso.',
     impact:
-      'Reducción aproximada del 90 % en los fallos registrados en los procesos de integración, según las métricas operacionales. Mejora observada en la mantenibilidad y el consumo de recursos, junto con una gestión de errores más estructurada, facilitando la evolución de una integración académica crítica.',
-    technologies: ['Oracle 19c', 'PL/SQL', 'Java', 'SQL', 'Ellucian Banner'],
+      'Reducción aproximada del 90 % en los errores atribuibles a la integración respecto de un período anterior comparable. El resultado se basa en el seguimiento diario durante 10 meses, diferenciando los errores propios de la integración de aquellos originados por problemas de calidad de datos.',
+    technologies: ['Oracle 19c', 'PL/SQL', 'Java', 'SQL', 'Ellucian Banner', 'Ethos API'],
+  },
+  {
+    title: 'Desarrollo de la integración de decretos',
+    category: 'Solution Architecture · Integration · PL/SQL',
+    description:
+      'Diseño e implementación desde cero de una integración para el procesamiento de decretos, con una arquitectura definida y mecanismos estructurados de validación y gestión de errores.',
+    responsibility:
+      'Diseño y desarrollo integral de la solución mediante una arquitectura basada en orquestación y separación de responsabilidades entre funciones y procedimientos PL/SQL. Implementación de validaciones, excepciones personalizadas, mensajería específica y triggers estructurados en SIGA para iniciar el proceso.',
+    impact:
+      'Tras un período de ajuste de tres meses, las fallas actuales representan aproximadamente el 3 % de las ejecuciones. Según la confirmación de Ellucian, estas fallas se deben a problemas de configuración de Banner cuya resolución está pendiente por parte del proveedor.',
+    technologies: ['Oracle 19c', 'PL/SQL', 'SQL', 'Ellucian Banner', 'SIGA'],
   },
   {
     title: 'Sistema de Gestión de Organizaciones (SGO)',
